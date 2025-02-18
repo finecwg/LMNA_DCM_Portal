@@ -1,0 +1,84 @@
+/* Import Google fonts */
+ @import url(https://fonts.googleapis.com/css?family=Lato|Raleway&subset=latin,latin-ext);
+  
+ .navbar-fixed {position: absolute;z-index:999999999;}
+
+ body, html{
+  font-family: 'Raleway', sans-serif;
+ }
+
+b{
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  /* font-weight: 1000; */
+}
+
+ul li, h5 {
+  color: rgb(127, 123, 123);
+}
+
+div, a {
+  color: rgb(90, 87, 87);
+}
+
+th, td, p, input {
+  font-size: 15px;
+  color: rgb(87, 89, 90);
+}
+
+th {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 1000;
+}
+
+.tbl_align_left {
+  text-align: left;
+}
+
+.tbl_align_center {
+  text-align: center;
+}
+
+.highlight-text {
+  background-color: rgba(255,255,0,0.1);
+  font-weight: 500;
+}
+
+td {
+  text-align: center;
+  font-size: 15px !important;
+}
+
+.modal { width: 100% !important ; height: 100% !important ; }
+
+.dataTables_filter input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  text-indent: 10px;
+}
+
+.material-tooltip {
+  background-color: #edecec;
+  font-family: "Helvetica";
+  font-size: 12px;
+}
+
+.inline-icon {
+  vertical-align: bottom;
+  font-size: 24px !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.btn {
+  text-transform: unset !important;
+}
+
+.modal { width: 20% !important ; height: 10% !important ; }

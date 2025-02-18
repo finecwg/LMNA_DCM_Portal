@@ -1,0 +1,11 @@
+{
+  "name": "lmna-dcm-portal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

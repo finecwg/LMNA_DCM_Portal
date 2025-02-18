@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMNA-DCM Resource Portal</title>
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- 네비게이션 바 -->
+    <nav class="nav-extended teal darken-2">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">LMNA-DCM Portal</a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#funders">Funders</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div class="nav-content container">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="#summary" class="active">Summary</a></li>
+          <li class="tab"><a href="#data">Data</a></li>
+          <li class="tab"><a href="#publication">Publication</a></li>
+          <li class="tab"><a href="#funders">Funders</a></li>
+          <li class="tab"><a href="#team">Team</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 모바일 사이드 네비게이션 -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#data">Data</a></li>
+      <li><a href="#publication">Publication</a></li>
+      <li><a href="#funders">Funders</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- Summary 섹션 -->
+    <section id="summary" class="section scrollspy">
+      <div class="container">
+        <h3>Summary</h3>
+        <p>
+          본 포털은 lamin (A/C)-related dilated cardiomyopathy (LMNA-DCM)에 대한 통합 multi‐omics 데이터를 제공하기 위해 만들어졌습니다.
+          10X Visium spatial transcriptomics, single-cell RNA-seq, single-cell ATAC-seq 데이터를 활용하여 LMNA-DCM의 분자 메커니즘을 탐구할 수 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Data 섹션 -->
+    <section id="data" class="section scrollspy">
+      <div class="container">
+        <h3>Data</h3>
+        <table class="highlight responsive-table">
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Spatial Transcriptomics</th>
+              <th>scRNA-seq</th>
+              <th>scATAC-seq</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LMNA-DCM Sample 1</td>
+              <td>
+                <a href="path/to/LMNA-DCM_Sample1_spatial.h5ad">
+                  <i class="material-icons">file_download</i>
+                </a>
+              </td>
+              <td>
+                <a href="path/to/LMNA-DCM_Sample1_scRNAseq.h5ad">
+                  <i class="material-icons">file_download</i>
+                </a>
+              </td>
+              <td>
+                <a href="path/to/LMNA-DCM_Sample1_scATACseq.h5ad">
+                  <i class="material-icons">file_download</i>
+                </a>
+              </td>
+              <td>
+                <a href="details_sample1.html">
+                  <i class="material-icons">pageview</i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>LMNA-DCM Sample 2</td>
+              <td>
+                <a href="path/to/LMNA-DCM_Sample2_spatial.h5ad">
+                  <i class="material-icons">file_download</i>
+                </a>
+              </td>
+              <td>
+                <a href="path/to/LMNA-DCM_Sample2_scRNAseq.h5ad">
+                  <i class="material-icons">file_download</i>
+                </a>
+              </td>
+              <td>
+                <a href="path/to/LMNA-DCM_Sample2_scATACseq.h5ad">
+                  <i class="material-icons">file_download</i>
+                </a>
+              </td>
+              <td>
+                <a href="details_sample2.html">
+                  <i class="material-icons">pageview</i>
+                </a>
+              </td>
+            </tr>
+            <!-- 추가 데이터 행들을 여기에 삽입 -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Publication 섹션 -->
+    <section id="publication" class="section scrollspy grey lighten-4">
+      <div class="container">
+        <h3>Publication</h3>
+        <p><strong>Title:</strong> Insights into LMNA-DCM via Multi-Omics</p>
+        <p>
+          <strong>Authors:</strong> John Doe, Jane Smith, et al. (2023)
+          (<a href="https://doi.org/xxxxxxx" target="_blank"><i class="material-icons tiny">link</i></a>)
+        </p>
+      </div>
+    </section>
+
+    <!-- Funders 섹션 -->
+    <section id="funders" class="section scrollspy">
+      <div class="container">
+        <h3>Funders</h3>
+        <div class="row">
+          <div class="col s12 m4">
+            <a href="https://example.com/funder1" target="_blank">
+              <img src="images/funder1.png" alt="Funder 1" class="responsive-img">
+            </a>
+          </div>
+          <div class="col s12 m4">
+            <a href="https://example.com/funder2" target="_blank">
+              <img src="images/funder2.png" alt="Funder 2" class="responsive-img">
+            </a>
+          </div>
+          <div class="col s12 m4">
+            <a href="https://example.com/funder3" target="_blank">
+              <img src="images/funder3.png" alt="Funder 3" class="responsive-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team 섹션 -->
+    <section id="team" class="section scrollspy">
+      <div class="container">
+        <h3>Team</h3>
+        <div class="row">
+          <div class="col s12 m3 center">
+            <img src="images/team_member1.png" alt="Team Member 1" class="circle responsive-img">
+            <p>Dr. A</p>
+          </div>
+          <div class="col s12 m3 center">
+            <img src="images/team_member2.png" alt="Team Member 2" class="circle responsive-img">
+            <p>Dr. B</p>
+          </div>
+          <div class="col s12 m3 center">
+            <img src="images/team_member3.png" alt="Team Member 3" class="circle responsive-img">
+            <p>Dr. C</p>
+          </div>
+          <div class="col s12 m3 center">
+            <img src="images/team_member4.png" alt="Team Member 4" class="circle responsive-img">
+            <p>Dr. D</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer teal darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <p class="white-text">© 2023 LMNA-DCM Resource Portal</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="grey-text text-lighten-3" href="https://www.example.com/terms">Terms and Conditions</a> |
+        <a class="grey-text text-lighten-3" href="https://www.example.com/privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery 및 Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 사이드 네비게이션 초기화
+      var elemsSidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elemsSidenav);
+      
+      // 탭 초기화
+      var elemsTabs = document.querySelectorAll('.tabs');
+      M.Tabs.init(elemsTabs);
+      
+      // 스크롤 스파이 초기화
+      var elemsScrollspy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(elemsScrollspy, {
+        scrollOffset: 50
+      });
+    });
+  </script>
+</body>
+</html>
