@@ -12,7 +12,7 @@ import {
 ChartJS.register(CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
 function DataVisualization() {
-  // 더미 UMAP 플롯 데이터 (Scatter 차트 예시)
+  // 더미 UMAP 데이터 (Scatter 차트 예시)
   const data = {
     datasets: [
       {
@@ -34,10 +34,7 @@ function DataVisualization() {
   const options = {
     responsive: true,
     scales: {
-      x: {
-        type: "linear",
-        position: "bottom",
-      },
+      x: { type: "linear", position: "bottom" },
     },
     plugins: {
       legend: { position: "top" },

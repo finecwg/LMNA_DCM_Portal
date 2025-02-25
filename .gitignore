@@ -35,3 +35,5 @@ pnpm-debug.log*
 
 # 임시 파일 및 폴더 (필요 없을 경우)
 #temp/
+data/
+renv/
