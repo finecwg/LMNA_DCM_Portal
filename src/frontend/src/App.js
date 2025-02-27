@@ -1,26 +1,18 @@
-import React, { useEffect } from "react";
-import M from "materialize-css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import HomePage from "./components/HomePage";
-import Funders from "./components/Funders";
-import Team from "./components/Team";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+import "./App.css";
 
 function App() {
-  useEffect(() => {
-    // Materialize 컴포넌트 초기화 (컴포넌트 mount 시 한 번 실행)
-    M.AutoInit();
-  }, []);
-
   return (
     <Router>
-      <div>
-        <Navbar />
+      <div className="App">
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/funders" element={<Funders />} />
-          <Route path="/team" element={<Team />} />
+          {/* Add more routes as needed */}
         </Routes>
         <Footer />
       </div>

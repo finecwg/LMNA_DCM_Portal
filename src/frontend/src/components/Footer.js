@@ -42,13 +42,13 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  CZ CELLxGENE
+                  CZI CELLxGENE
                 </a>
               </li>
               <li>
                 <a
                   className="grey-text text-lighten-3"
-                  href="https://github.com/yourusername/lmna-dcm-atlas"
+                  href="https://github.com/finecwg/LMNA_DCM_Portal"
                   target="_blank"
                   rel="noreferrer"
                 >
