@@ -31,10 +31,13 @@ function Header() {
                 <a href="#visualization">Visualizations</a>
               </li>
               <li>
-                <a href="#cellxgene">Interactive Explorer</a>
+                <a href="#expression">Gene Expression</a>
               </li>
               <li>
-                <a href="#publication">Publication</a>
+                <a href="#funders">Funders</a>
+              </li>
+              <li>
+                <a href="#team">Team</a>
               </li>
             </ul>
           </div>
@@ -52,10 +55,13 @@ function Header() {
           <a href="#visualization">Visualizations</a>
         </li>
         <li>
-          <a href="#cellxgene">Interactive Explorer</a>
+          <a href="#expression">Gene Expression</a>
         </li>
         <li>
-          <a href="#publication">Publication</a>
+          <a href="#funders">Funders</a>
+        </li>
+        <li>
+          <a href="#team">Team</a>
         </li>
       </ul>
 
@@ -64,15 +70,15 @@ function Header() {
           <div className="row center">
             <h1 className="header light white-text">LMNA-DCM Atlas</h1>
             <h5 className="header light white-text">
-              The first comprehensive spatial and single-cell transcriptomic
-              atlas of Lamin A/C-related dilated cardiomyopathy
+              The first comprehensive spatial and single-cell multi-omics atlas
+              of Lamin A/C-related dilated cardiomyopathy
             </h5>
             <a
               href="#summary"
-              className="btn-large waves-effect waves-light white"
-              style={{ color: "#8C1515" }}
+              className="btn-large waves-effect waves-light"
+              style={{ backgroundColor: "#8C1515" }}
             >
-              Explore Data
+              EXPLORE DATA
             </a>
           </div>
         </div>

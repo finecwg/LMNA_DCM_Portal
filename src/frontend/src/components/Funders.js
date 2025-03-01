@@ -1,50 +1,54 @@
 import React from "react";
 
 function Funders() {
+  const funders = [
+    {
+      name: "Stanford Cardiovascular Institute",
+      logo: "https://med.stanford.edu/mchri/awards/stanford-cvi/_jcr_content/main/panel_builder/panel_0/panel_builder/panel_0/image_279451397.img.620.high.jpg/cvi_horizontal_high_res.jpg",
+      link: "https://med.stanford.edu/cvi.html",
+    },
+    {
+      name: "Stanford Medicine",
+      logo: "https://online.stanford.edu/sites/default/files/styles/embedded_medium/public/school/stanford_medicine_logo.png?itok=LS2dTrT1",
+      link: "https://med.stanford.edu",
+    },
+    {
+      name: "NIH NHLBI",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWz4EMouZGgv4lvwSTjG_JLsmKVnesXB2FUg&s",
+      link: "https://www.nhlbi.nih.gov",
+    },
+  ];
+
   return (
     <section id="funders" className="section scrollspy">
       <div className="container">
-        <h3>Funders</h3>
-        <div className="row">
-          <div className="col s12 m4">
-            <a
-              href="https://example.com/funder1"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="images/funder1.png"
-                alt="Funder 1"
-                className="responsive-img"
-              />
-            </a>
-          </div>
-          <div className="col s12 m4">
-            <a
-              href="https://example.com/funder2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="images/funder2.png"
-                alt="Funder 2"
-                className="responsive-img"
-              />
-            </a>
-          </div>
-          <div className="col s12 m4">
-            <a
-              href="https://example.com/funder3"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="images/funder3.png"
-                alt="Funder 3"
-                className="responsive-img"
-              />
-            </a>
-          </div>
+        <h3 className="section-title">Funders</h3>
+        <p className="lead-text">
+          This research was made possible by generous support from:
+        </p>
+
+        <div className="row funders-container">
+          {funders.map((funder, index) => (
+            <div className="col s12 m4" key={index}>
+              <div className="card funder-card">
+                <div className="card-content center-align">
+                  <a
+                    href={funder.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={funder.logo}
+                      alt={funder.name}
+                      className="responsive-img funder-logo"
+                      style={{ maxHeight: "100px", margin: "15px 0" }}
+                    />
+                  </a>
+                  <p className="funder-name">{funder.name}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

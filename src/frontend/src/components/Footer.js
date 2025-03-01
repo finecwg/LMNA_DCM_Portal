@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="page-footer blue darken-3">
+    <footer className="page-footer" style={{ backgroundColor: "#8C1515" }}>
       <div className="container">
         <div className="row">
           <div className="col s12 m6">
@@ -60,9 +60,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-copyright">
-        <div className="container">
-          © {new Date().getFullYear()} LMNA-DCM Atlas
-        </div>
+        <div className="container">© 2025 LMNA-DCM Atlas</div>
       </div>
     </footer>
   );

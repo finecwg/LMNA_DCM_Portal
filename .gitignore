@@ -20,6 +20,8 @@ pnpm-debug.log*
 
 # 환경 변수 파일 (필요시 버전관리를 하지 않습니다)
 .env
+src/backend/.env
+src/backend/__pycache__
 .env.local
 .env.development.local
 .env.test.local

@@ -3,19 +3,25 @@ import Summary from "./Summary";
 import DataTable from "./DataTable";
 import DataVisualization from "./DataVisualization";
 import ExpressionVisualization from "./ExpressionVisualization";
-import Publication from "./Publication";
 import CellxGeneEmbed from "./CellxGeneEmbed";
+import Publication from "./Publication";
+import Funders from "./Funders";
+import Team from "./Team";
 
 function HomePage() {
   return (
-    <main>
-      <Summary />
-      <DataTable />
-      <DataVisualization />
-      <ExpressionVisualization />
-      <CellxGeneEmbed />
-      <Publication />
-    </main>
+    <div className="home-page">
+      <main>
+        <Summary />
+        <DataTable />
+        <DataVisualization />
+        <ExpressionVisualization />
+        <CellxGeneEmbed />
+        <Publication />
+        <Funders />
+        <Team />
+      </main>
+    </div>
   );
 }
 

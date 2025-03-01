@@ -1,5 +1,5 @@
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -318,4 +318,57 @@ a:hover {
 
 .publication-highlights .card-panel i {
   margin-right: 10px;
+}
+
+/* Funders and Team sections */
+.funder-card,
+.team-card {
+  transition: transform 0.3s ease;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.funder-card:hover,
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.funder-logo,
+.team-logo {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.funder-name,
+.team-name {
+  color: #2e2d29;
+  margin-top: 15px;
+}
+
+.funders-container,
+.team-container {
+  margin-top: 30px;
+}
+
+#funders,
+#team {
+  padding: 60px 0;
+}
+
+#funders {
+  background-color: #f4f4f4;
+}
+
+#team {
+  background-color: #f4f4f4;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  color: #565347;
+  margin-bottom: 30px;
 }

@@ -8,7 +8,7 @@ function Summary() {
       <div className="container">
         <div className="row">
           <div className="col s12 m6">
-            <h3 className="section-title">LMNA-DCM Atlas</h3>
+            <h3 className="section-title"><strong>LMNA-DCM Atlas</strong></h3>
             <p className="lead-text">
               The first comprehensive spatial and single-cell atlas of
               LMNA-related dilated cardiomyopathy, providing unprecedented
@@ -40,13 +40,12 @@ function Summary() {
             <div className="card-panel z-depth-2">
               {/* Use a placeholder image until you have the actual image */}
               <img
-                src="https://placehold.co/600x400?text=LMNA-DCM+Heart"
-                alt="LMNA-DCM Heart"
+                src={require("../assets/lmna_dcm_masson_trichrome.png")}
+                alt="LMNA-DCM Heart" 
                 className="responsive-img"
-              />
+                />
               <p className="caption center-align">
-                Spatial transcriptomics analysis of cardiac tissue in LMNA-DCM
-                patients
+                Cardiac tissue from LMNA-DCM patients (Masson's trichrome staining)
               </p>
             </div>
           </div>

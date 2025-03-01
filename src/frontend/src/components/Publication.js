@@ -9,21 +9,22 @@ function Publication() {
         <div className="card horizontal z-depth-1">
           <div className="card-image hide-on-small-only">
             <img
-              src="https://media.springernature.com/full/nature-static/assets/nature_favicon.svg"
-              alt="Nature"
+              src="https://www.heart.org/-/media/images/logos/global-do-no-edit/header/aha_icon.svg?h=30&w=60&hash=3022F7F39B2275C85A344A476BED5540263C280C"
+              alt="Circulation"
               className="publication-journal-logo"
+              style={{ maxWidth: "200px", maxHeight: "200px" }}
             />
           </div>
           <div className="card-stacked">
             <div className="card-content">
-              <h5>Insights into LMNA‑DCM via Multi‑Omics</h5>
-              <p className="publication-authors">
+              <h5>Spatial Transcriptomics Highlights Regional DNA Damage in LMNA-Linked Dilated Cardiomyopathy</h5>
+              <p className="publication-authors" style={{ marginBottom: "3px" }}>
                 Siyeon Rhee, Sangkyun Cho, et al.
               </p>
-              <p className="publication-journal">
-                <em>Nature</em> (2025)
+              <p className="publication-journal" style={{ marginBottom: "5px" }}>
+                <em>Circulation</em> (2025)
               </p>
-              <p className="publication-abstract">
+              <p className="publication-abstract" style={{ marginBottom: "10px" }}>
                 Lamin A/C-related dilated cardiomyopathy (LMNA-DCM) is a
                 devastating genetic heart disease with limited treatment
                 options. In this study, we present the first comprehensive
