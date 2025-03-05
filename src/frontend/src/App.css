@@ -372,3 +372,179 @@ a:hover {
   color: #565347;
   margin-bottom: 30px;
 }
+
+/* Button states - prevent white flash on click */
+.btn:focus,
+.btn-small:focus,
+.btn-large:focus,
+.btn:active,
+.btn-small:active,
+.btn-large:active {
+  background-color: inherit !important;
+}
+
+/* Specific button colors for data types */
+.btn-spatial {
+  background-color: #b1040e !important;
+}
+.btn-spatial:hover {
+  background-color: #d63344 !important;
+}
+
+.btn-scrna {
+  background-color: #006cb8 !important;
+}
+.btn-scrna:hover {
+  background-color: #0f88e0 !important;
+}
+
+.btn-scatac {
+  background-color: #592c82 !important;
+}
+.btn-scatac:hover {
+  background-color: #7941af !important;
+}
+
+.btn-details {
+  background-color: #018f85 !important;
+}
+.btn-details:hover {
+  background-color: #02b5a9 !important;
+}
+
+/* Add these new styles for the data table */
+.data-table-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.data-resources-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-resources-table th,
+.data-resources-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.data-resources-table th {
+  font-weight: 600;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.data-resources-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-resources-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Download buttons - elegant color scheme */
+.download-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s !important;
+  color: white !important;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  height: auto !important;
+  line-height: normal !important;
+}
+
+.download-btn i {
+  margin-right: 8px !important;
+  font-size: 18px !important;
+}
+
+.download-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+/* Modern, elegant color scheme */
+.spatial-btn {
+  background-color: #8c1515 !important; /* Stanford Cardinal Red */
+}
+
+.spatial-btn:hover,
+.spatial-btn:focus,
+.spatial-btn:active {
+  background-color: #9f2827 !important;
+}
+
+.scrna-btn {
+  background-color: #0098db !important; /* Vibrant blue */
+}
+
+.scrna-btn:hover,
+.scrna-btn:focus,
+.scrna-btn:active {
+  background-color: #0aade4 !important;
+}
+
+.scatac-btn {
+  background-color: #53377a !important; /* Rich purple */
+}
+
+.scatac-btn:hover,
+.scatac-btn:focus,
+.scatac-btn:active {
+  background-color: #634a8c !important;
+}
+
+.details-btn {
+  background-color: #007c92 !important; /* Teal */
+}
+
+.details-btn:hover,
+.details-btn:focus,
+.details-btn:active {
+  background-color: #0097a9 !important;
+}
+
+/* TARGETED FIX JUST FOR THE HERO BUTTON */
+.hero .btn-large,
+#explore-data-btn {
+  background-color: #8c1515 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* States - ALL STAY WHITE */
+.hero .btn-large:hover,
+.hero .btn-large:focus,
+.hero .btn-large:active,
+.hero .btn-large.waves-effect.waves-light.white-text:hover,
+.hero .btn-large.waves-effect.waves-light.white-text:focus,
+.hero .btn-large.waves-effect.waves-light.white-text:active,
+#explore-data-btn:hover,
+#explore-data-btn:focus,
+#explore-data-btn:active {
+  background-color: white !important;
+  color: #8c1515 !important;
+}
+
+/* Prevent default Materialize behavior */
+.waves-effect.waves-light .waves-ripple {
+  display: none !important;
+}

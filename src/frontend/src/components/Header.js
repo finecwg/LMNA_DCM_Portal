@@ -76,7 +76,7 @@ function Header() {
             <a
               href="#summary"
               className="btn-large waves-effect waves-light"
-              style={{ backgroundColor: "#8C1515" }}
+              id="explore-data-btn"
             >
               EXPLORE DATA
             </a>
