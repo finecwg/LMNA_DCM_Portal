@@ -12,7 +12,7 @@ function CellxGeneEmbed() {
         </p>
         <div className="cellxgene-container">
           <iframe
-            src="http://localhost:50000"
+            src="https://www.heartcellatlas.org/v2/global/"
             title="LMNA-DCM Cell Atlas"
             className="cellxgene-frame"
           />
