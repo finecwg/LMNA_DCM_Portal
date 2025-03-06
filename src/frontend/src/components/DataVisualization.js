@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Scatter } from "react-chartjs-2";
 import "chart.js/auto";
-import axios from "axios";
 
 function DataVisualization() {
   const [cellTypeData, setCellTypeData] = useState(null);
@@ -9,21 +8,9 @@ function DataVisualization() {
   const [activeTab, setActiveTab] = useState("umap");
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // In production, fetch real data from your API
-        const response = await axios.get("/api/visualizations/celltypes");
-        setCellTypeData(response.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching visualization data:", error);
-        // Fallback to dummy data if API fails
-        setCellTypeData(generateDummyData());
-        setLoading(false);
-      }
-    };
-
-    fetchData();
+    // Remove API call and always use dummy data
+    setCellTypeData(generateDummyData());
+    setLoading(false);
   }, []);
 
   const generateDummyData = () => {
