@@ -17,14 +17,26 @@ function Publication() {
           </div>
           <div className="card-stacked">
             <div className="card-content">
-              <h5>Spatial Transcriptomics Highlights Regional DNA Damage in LMNA-Linked Dilated Cardiomyopathy</h5>
-              <p className="publication-authors" style={{ marginBottom: "3px" }}>
-                Siyeon Rhee, Sangkyun Cho, et al.
+              <h5>
+                Spatial Transcriptomics Highlights Regional DNA Damage in
+                LMNA-Linked Dilated Cardiomyopathy
+              </h5>
+              <p
+                className="publication-authors"
+                style={{ marginBottom: "3px" }}
+              >
+                Siyeon Rhee, Sangkyun Cho, .., Joseph C. Wu
               </p>
-              <p className="publication-journal" style={{ marginBottom: "5px" }}>
+              <p
+                className="publication-journal"
+                style={{ marginBottom: "5px" }}
+              >
                 <em>Circulation</em> (2025)
               </p>
-              <p className="publication-abstract" style={{ marginBottom: "10px" }}>
+              <p
+                className="publication-abstract"
+                style={{ marginBottom: "10px" }}
+              >
                 Lamin A/C-related dilated cardiomyopathy (LMNA-DCM) is a
                 devastating genetic heart disease with limited treatment
                 options. In this study, we present the first comprehensive
