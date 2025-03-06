@@ -31,7 +31,7 @@ function Publication() {
                 className="publication-journal"
                 style={{ marginBottom: "5px" }}
               >
-                <em>Circulation</em> (2025)
+                <em>Unpublished</em> (2025)
               </p>
               <p
                 className="publication-abstract"
