@@ -15,7 +15,7 @@ function Header() {
         <nav className="nav-extended">
           <div className="nav-wrapper container">
             <a href="#!" className="brand-logo">
-              LMNA-DCM Portal
+              LMNA-DCM Atlas
             </a>
             <a href="#" data-target="mobile-nav" className="sidenav-trigger">
               <i className="material-icons">menu</i>
