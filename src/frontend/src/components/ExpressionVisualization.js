@@ -34,7 +34,7 @@ function ExpressionVisualization() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://localhost:8000/api/gene-info?gene=${gene}`
+        `http://34.121.62.38:8000/api/gene-info?gene=${gene}`
       );
       setGeneInfo(response.data.description.description);
     } catch (error) {
@@ -56,7 +56,7 @@ function ExpressionVisualization() {
 
       // Expression data 가져오기
       const response = await axios.get(
-        `http://localhost:8001/api/expression/${gene}`
+        `http://34.121.62.38:8001/api/expression/${gene}`
       );
 
       if (response.data.error) {
