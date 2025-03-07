@@ -33,11 +33,13 @@ function ExpressionVisualization() {
 
     try {
       setLoading(true);
-      const response = await axios.get(`/api/gene-info/${gene}`);
-      setGeneInfo(response.data.description);
+      const response = await axios.get(
+        `http://localhost:8000/api/gene-info?gene=${gene}`
+      );
+      setGeneInfo(response.data.description.description);
     } catch (error) {
       console.error("Error fetching gene info:", error);
-      setGeneInfo("Information about this gene could not be retrieved.");
+      setGeneInfo(null);
     } finally {
       setLoading(false);
     }
@@ -48,50 +50,54 @@ function ExpressionVisualization() {
 
     try {
       setLoading(true);
+
+      // Gene info 먼저 가져오기
+      fetchGeneInfo(gene);
+
+      // Expression data 가져오기
       const response = await axios.get(
-        `/api/expression/${selectedDataset}/${gene}`
+        `http://localhost:8001/api/expression/${gene}`
       );
 
       if (response.data.error) {
         M.toast({ html: response.data.error, classes: "red" });
-        return;
+        // Error가 있더라도 여기서 return하지 않음
+        setChartData(null);
+        setExpMeta(null);
+      } else {
+        const data = response.data;
+
+        // Create chart data
+        const chartData = {
+          datasets: [
+            {
+              label: `${gene} Expression`,
+              data: data.umap.map((coords, i) => ({
+                x: coords[0],
+                y: coords[1],
+                expression: data.expression[i],
+                cellType: data.cellTypes ? data.cellTypes[i] : "Unknown",
+              })),
+              backgroundColor: data.expression.map((value) => {
+                const normalized = (value - data.min) / (data.max - data.min);
+                return `rgba(${255 * normalized}, 0, ${
+                  255 * (1 - normalized)
+                }, 0.7)`;
+              }),
+              pointRadius: 3,
+              pointHoverRadius: 5,
+            },
+          ],
+        };
+
+        setChartData(chartData);
+        setExpMeta(data);
       }
-
-      const data = response.data;
-
-      // Create chart data
-      const chartData = {
-        datasets: [
-          {
-            label: `${gene} Expression`,
-            data: data.umap.map((coords, i) => ({
-              x: coords[0],
-              y: coords[1],
-              expression: data.expression[i],
-              cellType: data.cellTypes ? data.cellTypes[i] : "Unknown",
-            })),
-            backgroundColor: data.expression.map((value) => {
-              // Create a color scale from blue (low) to red (high)
-              const normalized = (value - data.min) / (data.max - data.min);
-              if (normalized < 0.25) return "rgba(65, 105, 225, 0.7)"; // Royal blue
-              if (normalized < 0.5) return "rgba(135, 206, 250, 0.7)"; // Light blue
-              if (normalized < 0.75) return "rgba(255, 165, 0, 0.7)"; // Orange
-              return "rgba(178, 34, 34, 0.7)"; // Firebrick red
-            }),
-            pointRadius: 3,
-            pointHoverRadius: 5,
-          },
-        ],
-      };
-
-      setChartData(chartData);
-      setExpMeta(data);
-
-      // Fetch gene info from LLM
-      fetchGeneInfo(gene);
     } catch (error) {
       console.error("Error fetching gene expression:", error);
       M.toast({ html: "Error fetching expression data", classes: "red" });
+      setChartData(null);
+      setExpMeta(null);
     } finally {
       setLoading(false);
     }
@@ -208,7 +214,52 @@ function ExpressionVisualization() {
               <div className="card gene-info-card">
                 <div className="card-content">
                   <span className="card-title">{selectedGene} Information</span>
-                  <p>{geneInfo}</p>
+
+                  <div style={{ marginBottom: "25px" }}>
+                    <h6
+                      className="blue-text text-darken-2"
+                      style={{ marginBottom: "10px" }}
+                    >
+                      Basic Information
+                    </h6>
+                    <p style={{ margin: "0" }}>{geneInfo.basic_info}</p>
+                  </div>
+
+                  <div style={{ marginBottom: "25px" }}>
+                    <h6
+                      className="blue-text text-darken-2"
+                      style={{ marginBottom: "10px" }}
+                    >
+                      Disease Relevance
+                    </h6>
+                    <p style={{ margin: "0" }}>{geneInfo.disease_relevance}</p>
+                  </div>
+
+                  <div style={{ marginBottom: "25px" }}>
+                    <h6
+                      className="blue-text text-darken-2"
+                      style={{ marginBottom: "10px" }}
+                    >
+                      Therapeutic Potential
+                    </h6>
+                    <p style={{ margin: "0" }}>
+                      {geneInfo.therapeutic_potential}
+                    </p>
+                  </div>
+
+                  <p
+                    style={{
+                      color: "#9e9e9e",
+                      fontSize: "0.9em",
+                      marginTop: "15px",
+                      fontStyle: "italic",
+                      borderTop: "1px solid #eee",
+                      paddingTop: "10px",
+                    }}
+                  >
+                    This information is generated by AI and should be verified
+                    against current scientific literature.
+                  </p>
                 </div>
               </div>
             </div>
