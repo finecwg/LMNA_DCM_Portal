@@ -3,6 +3,8 @@ import { Scatter } from "react-chartjs-2";
 import axios from "axios";
 import M from "materialize-css";
 
+const API_BASE_URL = "https://34.121.62.38"; // http -> https
+
 function ExpressionVisualization() {
   const [expMeta, setExpMeta] = useState(null);
   const [nonzero, setNonzero] = useState(null);
@@ -34,7 +36,7 @@ function ExpressionVisualization() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://34.121.62.38:8000/api/gene-info?gene=${gene}`
+        `${API_BASE_URL}:8000/api/gene-info?gene=${gene}`
       );
       setGeneInfo(response.data.description.description);
     } catch (error) {
@@ -56,7 +58,7 @@ function ExpressionVisualization() {
 
       // Expression data 가져오기
       const response = await axios.get(
-        `http://34.121.62.38:8001/api/expression/${gene}`
+        `${API_BASE_URL}:8001/api/expression/${gene}`
       );
 
       if (response.data.error) {
