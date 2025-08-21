@@ -7,14 +7,6 @@ function Publication() {
         <h3 className="section-title">Publication</h3>
 
         <div className="card horizontal z-depth-1">
-          <div className="card-image hide-on-small-only">
-            <img
-              src="https://www.heart.org/-/media/images/logos/global-do-no-edit/header/aha_icon.svg?h=30&w=60&hash=3022F7F39B2275C85A344A476BED5540263C280C"
-              alt="Circulation"
-              className="publication-journal-logo"
-              style={{ maxWidth: "200px", maxHeight: "200px" }}
-            />
-          </div>
           <div className="card-stacked">
             <div className="card-content">
               <h5>
