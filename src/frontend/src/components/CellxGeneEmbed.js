@@ -12,7 +12,7 @@ function CellxGeneEmbed() {
         </p>
         <div className="cellxgene-container">
           <iframe
-            src="https://lmnadcm.siyeonrhee.com"
+            src="https://cellxgene-viewer-466983702752.us-central1.run.app/"
             title="LMNA-DCM Cell Atlas"
             className="cellxgene-frame"
             allow="fullscreen"
