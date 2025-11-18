@@ -28,10 +28,7 @@ function Header() {
                 <a href="#data">Data</a>
               </li>
               <li>
-                <a href="#visualization">Visualizations</a>
-              </li>
-              <li>
-                <a href="#expression">Gene Expression</a>
+                <a href="#publication">Publication</a>
               </li>
               <li>
                 <a href="#funders">Funders</a>
@@ -52,10 +49,7 @@ function Header() {
           <a href="#data">Data</a>
         </li>
         <li>
-          <a href="#visualization">Visualizations</a>
-        </li>
-        <li>
-          <a href="#expression">Gene Expression</a>
+          <a href="#publication">Publication</a>
         </li>
         <li>
           <a href="#funders">Funders</a>

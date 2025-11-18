@@ -29,15 +29,16 @@ function Publication() {
                 className="publication-abstract"
                 style={{ marginBottom: "10px" }}
               >
-                Lamin A/C-related dilated cardiomyopathy (LMNA-DCM) is a
-                devastating genetic heart disease with limited treatment
-                options. In this study, we present the first comprehensive
-                spatial and single-cell transcriptomic atlas of LMNA-DCM,
-                providing unprecedented insights into the disease progression
-                mechanisms. Our multi-omics approach reveals how cardiomyocyte
-                nuclear blebbing leads to rupture and apoptosis, while ECM
-                signaling triggers severe fibrosis by activating quiescent
-                cardiac fibroblasts.
+                Lamin A/C cardiomyopathy accounts for a small fraction of DCM
+                yet drives early arrhythmias, zonal fibrosis, and sudden death.
+                We combine Visium spatial profiling with joint single-nucleus
+                RNA/ATAC sequencing to chart four myocardial damage tiers where
+                cardiomyocyte stress trajectories, DNA damage response, and ECM
+                remodeling rise in concert. Patient-derived LMNA iPSC-CMs reveal
+                a mechanosensitive loop—nuclear blebbing, rupture, γH2AX foci increase—that is reversible with blebbistatin unloading.
+                The same trajectory exhibits PARP1 hyperactivation and NAD⁺
+                depletion, pointing to mechano-metabolic interventions such as
+                PARP inhibition, NAD⁺ repletion, and early mechanical unloading.
               </p>
               <div className="publication-links">
                 <a
@@ -62,35 +63,38 @@ function Publication() {
             <div className="card-panel">
               <h5>
                 <i className="material-icons left blue-text">track_changes</i>{" "}
-                Key Finding 1
+                Zonal fibrosis + DDR coupling
               </h5>
               <p>
-                Spatial transcriptomics identified regional progression of
-                tissue defects in LMNA-DCM hearts.
+                Visium mapping revealed four damage tiers where fibrosis,
+                γH2AX, and DDR module scores rise in lockstep from epicardium to
+                endocardium.
               </p>
             </div>
           </div>
           <div className="col s12 m4">
             <div className="card-panel">
               <h5>
-                <i className="material-icons left blue-text">lightbulb</i> Key
-                Finding 2
+                <i className="material-icons left blue-text">lightbulb</i>
+                Mechanosensitive nuclear rupture
               </h5>
               <p>
-                Cardiomyocyte nuclear blebbing and rupture lead to apoptosis in
-                a progressive manner.
+                LMNA iPSC-CMs uniquely exhibit nuclear blebbing, double-strand
+                breaks, and apoptosis under mechanical stress, all reversible
+                with blebbistatin unloading.
               </p>
             </div>
           </div>
           <div className="col s12 m4">
             <div className="card-panel">
               <h5>
-                <i className="material-icons left blue-text">insights</i> Key
-                Finding 3
+                <i className="material-icons left blue-text">insights</i>
+                PARP1–NAD⁺ therapeutic axis
               </h5>
               <p>
-                ECM signaling transforms quiescent cardiac fibroblasts into
-                pro-fibrotic cells.
+                PARP1 hyperactivation depletes NAD⁺ along the cardiomyocyte
+                trajectory, nominating PARP inhibition, NAD⁺ repletion, and early
+                unloading as actionable strategies.
               </p>
             </div>
           </div>

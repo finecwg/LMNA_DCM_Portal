@@ -478,6 +478,171 @@ a:hover {
   transform: translateY(-1px);
 }
 
+.secondary-text {
+  color: #4a4841;
+  line-height: 1.5;
+}
+
+.data-card {
+  border-radius: 14px;
+  background: #fff;
+  margin-bottom: 30px;
+  border: 1px solid #ebe5db;
+  box-shadow: 0 10px 25px rgba(16, 6, 2, 0.05);
+}
+
+.snrna-card {
+  border-left: 6px solid #801515;
+}
+
+.atlas-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.atlas-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.atlas-heading h4 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.atlas-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #8c1515;
+}
+
+.atlas-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.download-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.download-pill {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #d5cec0;
+  background: #f9f6f0;
+  color: #3a3832;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s;
+}
+
+.download-pill:hover,
+.download-pill:focus {
+  background: #8c1515;
+  color: #fff;
+  border-color: #8c1515;
+}
+
+.download-pill i {
+  font-size: 18px;
+}
+
+.atlas-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  border-top: 1px solid #efe9de;
+  padding-top: 20px;
+}
+
+.atlas-column h6 {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8c1515;
+  margin-bottom: 12px;
+}
+
+.atlas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #4c4a45;
+  line-height: 1.6;
+}
+
+.atlas-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.atlas-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c17c74;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.integration-note {
+  border-top: 1px solid #e3ddd1;
+  padding-top: 15px;
+}
+
+.dataset-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8c1515;
+}
+
+.dataset-list {
+  margin: 10px 0 0 18px;
+  color: #4c4a45;
+  line-height: 1.5;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+}
+
+.pending-card {
+  background-color: #f7f2ec;
+  border-radius: 10px;
+  border: 1px dashed #d8cfc0;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.pending-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* Modern, elegant color scheme */
 .spatial-btn {
   background-color: #8c1515 !important; /* Stanford Cardinal Red */
@@ -547,4 +712,41 @@ a:hover {
 /* Prevent default Materialize behavior */
 .waves-effect.waves-light .waves-ripple {
   display: none !important;
+}
+
+/* Publication-ready placeholders */
+.section-placeholder .placeholder-card {
+  background-color: #f8f6f2;
+  border: 1px solid #e0dbce;
+  border-radius: 8px;
+}
+
+.placeholder-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background-color: #fff3e0;
+  color: #b34700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.placeholder-list {
+  margin: 0 0 12px 18px;
+  color: #4c4a45;
+  line-height: 1.5;
+}
+
+.placeholder-list li {
+  margin-bottom: 6px;
+}
+
+.placeholder-footnote {
+  font-size: 0.9rem;
+  color: #6e6b63;
+  font-style: italic;
+  margin-top: 12px;
 }

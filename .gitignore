@@ -1,41 +1,77 @@
-# OS에서 생성된 파일
+# OS / 시스템 파일
 .DS_Store
 Thumbs.db
 
-# 의존성 폴더 (각각의 backend, frontend 등)
+# Node.js 의존성/캐시
 node_modules/
 **/node_modules/
+.cache/
+.parcel-cache/
+.pnp.*
+.yarn/*
+.eslintcache
+*.tsbuildinfo
+.turbo/
 
-# 빌드 산출물 (React 빌드를 하는 경우)
-build/
-dist/
-src/frontend/build/
-
-# 테스트 및 로그 파일
-coverage/
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
-
-# 환경 변수 파일 (필요시 버전관리를 하지 않습니다)
+# Python & 가상환경
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.pytype/
+pip-wheel-metadata/
+pip-log.txt
+venv/
+.venv/
+env/
 .env
 src/backend/.env
-src/backend/__pycache__
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# IDE 및 에디터 설정 파일
+# 빌드 산출물 / 호스팅 아티팩트
+build/
+dist/
+src/frontend/build/
+.next/
+out/
+.vercel/
+
+# 로그 및 리포트
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 데이터/리서치 아티팩트
+data/
+renv/
+
+# 노트북 / 임시 체크포인트
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# R 관련
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# IDE / 편집기
 .vscode/
 .idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-
-# 임시 파일 및 폴더 (필요 없을 경우)
-#temp/
-data/
-renv/

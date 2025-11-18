@@ -9,7 +9,7 @@ function Funders() {
     },
     {
       name: "Stanford Medicine",
-      logo: "https://online.stanford.edu/sites/default/files/styles/embedded_medium/public/school/stanford_medicine_logo.png?itok=LS2dTrT1",
+      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_DYBwXc7XKNyPosFS152S16tlCrHkd5clw&s",
       link: "https://med.stanford.edu",
     },
     {

@@ -18,21 +18,19 @@ function Summary() {
             <h5>Research Highlights</h5>
             <ul className="browser-default highlights-list">
               <li>
-                First integration of spatial transcriptomics with scRNA-seq for
-                LMNA-DCM
-              </li>
-              <li>Identification of regional progression of tissue defects</li>
-              <li>
-                Elucidation of disease progression mechanism in human tissue and
-                iPSC-CM
+                First spatial transcriptomic map of LMNA-DCM delineating four zonal tiers of fibrosis and DNA-damage burden.
               </li>
               <li>
-                Discovery of cardiomyocyte nuclear blebbing and rupture leading
-                to apoptosis
+                Joint Visium + single-nucleus RNA profiling links cardiomyocyte trajectory states to zone-specific remodeling.
               </li>
               <li>
-                Identification of ECM signaling pathways in cardiac fibrosis
-                development
+                Mechanical stress drives nuclear blebbing, γH2AX accumulation, and apoptosis uniquely in LMNA mutant iPSC-CMs—rescued by blebbistatin.
+              </li>
+              <li>
+                PARP1 hyperactivation depletes NAD⁺ as damage progresses, nominating PARP inhibition and NAD⁺ supplementation as therapeutic angles.
+              </li>
+              <li>
+                Spatial heterogeneity arises from mechano-metabolic feedback, reframing LMNA-DCM as a stress-amplified disease amenable to early unloading strategies.
               </li>
             </ul>
           </div>

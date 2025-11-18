@@ -7,16 +7,19 @@ import CellxGeneEmbed from "./CellxGeneEmbed";
 import Publication from "./Publication";
 import Funders from "./Funders";
 import Team from "./Team";
+import featureFlags from "../config/featureFlags";
 
 function HomePage() {
+  const { dataVisualization, geneExpression, cellAtlas } = featureFlags;
+
   return (
     <div className="home-page">
       <main>
         <Summary />
         <DataTable />
-        <DataVisualization />
-        <ExpressionVisualization />
-        <CellxGeneEmbed />
+        {dataVisualization && <DataVisualization />}
+        {geneExpression && <ExpressionVisualization />}
+        {cellAtlas && <CellxGeneEmbed />}
         <Publication />
         <Funders />
         <Team />
